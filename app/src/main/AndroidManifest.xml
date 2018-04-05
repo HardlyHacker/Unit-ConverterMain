@@ -14,8 +14,7 @@
   ~ limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.physphil.android.unitconverterultimate">
-
+    package="com.vedak.omkar.unitconverter">
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application

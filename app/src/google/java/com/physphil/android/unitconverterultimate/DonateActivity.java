@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.physphil.android.unitconverterultimate;
+package com.vedak.omkar.unitconverter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -26,12 +26,12 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.physphil.android.unitconverterultimate.iab.IabHelper;
-import com.physphil.android.unitconverterultimate.iab.IabResult;
-import com.physphil.android.unitconverterultimate.iab.Inventory;
-import com.physphil.android.unitconverterultimate.iab.Purchase;
-import com.physphil.android.unitconverterultimate.ui.DonateListAdapter;
-import com.physphil.android.unitconverterultimate.ui.RecyclerViewItemClickListener;
+import com.vedak.omkar.unitconverter.iab.IabHelper;
+import com.vedak.omkar.unitconverter.iab.IabResult;
+import com.vedak.omkar.unitconverter.iab.Inventory;
+import com.vedak.omkar.unitconverter.iab.Purchase;
+import com.vedak.omkar.unitconverter.ui.DonateListAdapter;
+import com.vedak.omkar.unitconverter.ui.RecyclerViewItemClickListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;

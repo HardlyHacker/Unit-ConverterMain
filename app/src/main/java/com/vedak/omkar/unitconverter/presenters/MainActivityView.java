@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 Phil Shadlyn
+ * Copyright 2017 Phil Shadlyn
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,21 +14,11 @@
  * limitations under the License.
  */
 
-package com.vedak.omkar.unitconverter.iab;
+package com.vedak.omkar.unitconverter.presenters;
 
 /**
- * Exception thrown when encountering an invalid Base64 input character.
- *
- * @author nelson
+ * Created by Phizz on 2017-05-21.
  */
-public class Base64DecoderException extends Exception {
-    public Base64DecoderException() {
-        super();
-    }
-
-    public Base64DecoderException(String s) {
-        super(s);
-    }
-
-    private static final long serialVersionUID = 1L;
+public interface MainActivityView {
+    void restartApp();
 }

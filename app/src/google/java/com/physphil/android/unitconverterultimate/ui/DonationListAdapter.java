@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.physphil.android.unitconverterultimate.ui;
+package com.vedak.omkar.unitconverter.ui;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -23,9 +23,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.physphil.android.unitconverterultimate.R;
-import com.physphil.android.unitconverterultimate.iab.Inventory;
-import com.physphil.android.unitconverterultimate.iab.SkuDetails;
+import com.vedak.omkar.unitconverter.R;
+import com.vedak.omkar.unitconverter.iab.Inventory;
+import com.vedak.omkar.unitconverter.iab.SkuDetails;
 
 /**
  * Created by pshadlyn on 7/17/2014.

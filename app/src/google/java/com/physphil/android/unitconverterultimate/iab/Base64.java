@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.physphil.android.unitconverterultimate.iab;
+package com.vedak.omkar.unitconverter.iab;
 
 // This code was converted from code at http://iharder.sourceforge.net/base64/
 // Lots of extraneous features were removed.

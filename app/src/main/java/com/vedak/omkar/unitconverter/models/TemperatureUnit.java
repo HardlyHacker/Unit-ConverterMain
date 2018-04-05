@@ -14,27 +14,22 @@
  * limitations under the License.
  */
 
-package com.vedak.omkar.unitconverter.util;
-
-import android.content.Context;
-import android.content.Intent;
-
-import com.vedak.omkar.unitconverter.DonateActivity;
+package com.vedak.omkar.unitconverter.models;
 
 /**
- * 'Google' build flavour specific implementation of IntentFactory
- * Created by Phizz on 2016-11-13.
+ * Temperature Unit for conversion
+ * Created by Phizz on 15-07-31.
  */
-
-public class IntentFactory extends BaseIntentFactory {
+public final class TemperatureUnit extends Unit {
 
     /**
-     * Get an Intent to start DonateActivity.  This is only included in the 'google' build flavour.
+     * Create a new Temperature unit
      *
-     * @param context context
-     * @return an Intent to start DonateActivity
+     * @param id            unit id
+     * @param labelResource resource of string label
      */
-    public static Intent getDonateIntent(final Context context) {
-        return new Intent(context, DonateActivity.class);
+    public TemperatureUnit(int id, int labelResource) {
+        // Don't require conversion info, handled in code
+        super(id, labelResource, 0.0, 0.0);
     }
 }

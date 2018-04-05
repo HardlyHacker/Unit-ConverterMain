@@ -14,21 +14,22 @@
  * limitations under the License.
  */
 
-package com.vedak.omkar.unitconverter.iab;
+package com.vedak.omkar.unitconverter;
+
+import com.facebook.stetho.Stetho;
 
 /**
- * Exception thrown when encountering an invalid Base64 input character.
- *
- * @author nelson
+ * Debug application class, used to initialize Stetho
+ * Created by pshadlyn on 8/18/2015.
  */
-public class Base64DecoderException extends Exception {
-    public Base64DecoderException() {
-        super();
-    }
+public class UnitConverterDebugApplication extends UnitConverterApplication {
 
-    public Base64DecoderException(String s) {
-        super(s);
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        Stetho.initialize(Stetho.newInitializerBuilder(this)
+                .enableDumpapp(Stetho.defaultDumperPluginsProvider(this))
+                .enableWebKitInspector(Stetho.defaultInspectorModulesProvider(this))
+                .build());
     }
-
-    private static final long serialVersionUID = 1L;
 }

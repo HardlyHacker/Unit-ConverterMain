@@ -14,21 +14,18 @@
  * limitations under the License.
  */
 
-package com.vedak.omkar.unitconverter.iab;
+package com.vedak.omkar.unitconverter.api;
+
+import com.vedak.omkar.unitconverter.api.models.CurrencyResponse;
+
+import retrofit2.http.GET;
+import rx.Observable;
 
 /**
- * Exception thrown when encountering an invalid Base64 input character.
- *
- * @author nelson
+ * Retrofit service to consume Fixer.io API
+ * Created by Phizz on 16-07-26.
  */
-public class Base64DecoderException extends Exception {
-    public Base64DecoderException() {
-        super();
-    }
-
-    public Base64DecoderException(String s) {
-        super(s);
-    }
-
-    private static final long serialVersionUID = 1L;
+public interface FixerService {
+    @GET("latest")
+    Observable<CurrencyResponse> getLatestRates();
 }

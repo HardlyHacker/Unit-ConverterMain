@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.physphil.android.unitconverterultimate.iab;
+package com.vedak.omkar.unitconverter.iab;
 
 import android.text.TextUtils;
 import android.util.Log;

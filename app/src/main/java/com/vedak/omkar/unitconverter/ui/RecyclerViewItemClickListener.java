@@ -14,27 +14,19 @@
  * limitations under the License.
  */
 
-package com.vedak.omkar.unitconverter.util;
-
-import android.content.Context;
-import android.content.Intent;
-
-import com.vedak.omkar.unitconverter.DonateActivity;
+package com.vedak.omkar.unitconverter.ui;
 
 /**
- * 'Google' build flavour specific implementation of IntentFactory
- * Created by Phizz on 2016-11-13.
+ * Interface to handle item clicks in recycler view
+ * Created by pshadlyn on 4/24/2015.
  */
-
-public class IntentFactory extends BaseIntentFactory {
+public interface RecyclerViewItemClickListener {
 
     /**
-     * Get an Intent to start DonateActivity.  This is only included in the 'google' build flavour.
+     * Called when an item is clicked in the recycler view list
      *
-     * @param context context
-     * @return an Intent to start DonateActivity
+     * @param item     the selected item
+     * @param position the position of the selected item in the list
      */
-    public static Intent getDonateIntent(final Context context) {
-        return new Intent(context, DonateActivity.class);
-    }
+    void onListItemClicked(Object item, int position);
 }

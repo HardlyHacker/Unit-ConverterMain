@@ -16,25 +16,24 @@
 
 package com.vedak.omkar.unitconverter.util;
 
+
 import android.content.Context;
 import android.content.Intent;
 
-import com.vedak.omkar.unitconverter.DonateActivity;
-
 /**
- * 'Google' build flavour specific implementation of IntentFactory
+ * 'base' implementation of IntentFactory
  * Created by Phizz on 2016-11-13.
  */
 
 public class IntentFactory extends BaseIntentFactory {
 
     /**
-     * Get an Intent to start DonateActivity.  This is only included in the 'google' build flavour.
+     * Base implementation of method, will not be used so returns null.
      *
      * @param context context
-     * @return an Intent to start DonateActivity
+     * @return null
      */
     public static Intent getDonateIntent(final Context context) {
-        return new Intent(context, DonateActivity.class);
+        return null;
     }
 }

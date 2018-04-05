@@ -14,21 +14,25 @@
  * limitations under the License.
  */
 
-package com.vedak.omkar.unitconverter.iab;
+package com.vedak.omkar.unitconverter;
+
+import android.app.Application;
+
+import com.vedak.omkar.unitconverter.util.Conversions;
 
 /**
- * Exception thrown when encountering an invalid Base64 input character.
- *
- * @author nelson
+ * Application class
+ * Created by pshadlyn on 8/10/2015.
  */
-public class Base64DecoderException extends Exception {
-    public Base64DecoderException() {
-        super();
-    }
+public class UnitConverterApplication extends Application {
 
-    public Base64DecoderException(String s) {
-        super(s);
-    }
+    public static final String BUILD_FLAVOUR_GOOGLE = "google";
+    public static final String BUILD_FLAVOUR_BASE = "base";
 
-    private static final long serialVersionUID = 1L;
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        // Initialize conversions object, and load currency if stored
+        Conversions.getInstance().updateCurrencyConversions(this);
+    }
 }

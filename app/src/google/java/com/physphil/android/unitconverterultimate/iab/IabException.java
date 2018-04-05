@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.physphil.android.unitconverterultimate.iab;
+package com.vedak.omkar.unitconverter.iab;
 
 /**
  * Exception thrown when something went wrong with in-app billing.

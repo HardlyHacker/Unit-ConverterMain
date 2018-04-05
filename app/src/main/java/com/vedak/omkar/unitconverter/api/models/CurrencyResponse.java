@@ -14,21 +14,27 @@
  * limitations under the License.
  */
 
-package com.vedak.omkar.unitconverter.iab;
+package com.vedak.omkar.unitconverter.api.models;
 
 /**
- * Exception thrown when encountering an invalid Base64 input character.
- *
- * @author nelson
+ * Response object sent from Fixer.io API
+ * Created by Phizz on 16-07-26.
  */
-public class Base64DecoderException extends Exception {
-    public Base64DecoderException() {
-        super();
+public class CurrencyResponse {
+
+    private String base;
+    private String date;
+    private Rates rates;
+
+    public String getBase() {
+        return base;
     }
 
-    public Base64DecoderException(String s) {
-        super(s);
+    public String getDate() {
+        return date;
     }
 
-    private static final long serialVersionUID = 1L;
+    public Rates getRates() {
+        return rates;
+    }
 }
